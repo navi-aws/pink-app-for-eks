@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pinkapp-deployment
+  labels:
+    app: pinkapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: pinkapp
+  template:
+    metadata:
+      labels:
+        app: pinkapp
+    spec:
+      containers:
+      - name: pinkapp
+        image: p771000/pink-app:latest
+        ports:
+        - containerPort: 80
