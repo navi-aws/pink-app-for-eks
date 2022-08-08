@@ -4,6 +4,7 @@ metadata:
   name: pinkapp-deployment
   labels:
     app: pinkapp
+  namespace: pinkapp
 spec:
   replicas: 3
   selector:

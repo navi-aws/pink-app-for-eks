@@ -1,0 +1,4 @@
+this app is to show bach jobs in ecs
+
+can be used to show docker container -up/running/exiting
+docker container logs containerid (2 letters.

@@ -4,6 +4,7 @@ metadata:
   name: pinkapp
   labels:
    app: pinkapp
+  namespace: pinkapp 
 spec:
   ports:
   - name: http
